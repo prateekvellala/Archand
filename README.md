@@ -10,7 +10,7 @@ Control your mouse pointer entirely using hand gestures.
         <img src="move%20pointer.jpg" alt="Move pointer" width="300"/>
     </div>
     <div>
-        <h3>Single left click</h3>
+        <h3>Single left click (Make sure the pointer stays still in the same spot for about 2 seconds before lifting your middle finger to perform a click)</h3>
         <img src="single%20left%20click.jpg" alt="Single left click" width="300"/>
     </div>
     <div>
@@ -18,7 +18,7 @@ Control your mouse pointer entirely using hand gestures.
         <img src="double%20left%20click.jpg" alt="Double left click" width="300"/>
     </div>
     <div>
-        <h3>Single right click</h3>
+        <h3>Single right click (Make sure the pointer stays still in the same spot for about 2 seconds before performing a click)</h3>
         <img src="single%20right%20click.jpg" alt="Single right click" width="300"/>
     </div>
     <div>
