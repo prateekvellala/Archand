@@ -1,5 +1,5 @@
 # Archand
-Control your mouse entirely using hand gestures.
+Control your mouse pointer entirely using hand gestures.
 
 - The autopy library can only be installed on Python 3.8 or earlier versions.
 - Maintain a good amount of distance from your camera for it to work well.
