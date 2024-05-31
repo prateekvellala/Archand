@@ -25,4 +25,12 @@ Control your mouse pointer entirely using hand gestures.
         <h3>Hold left click and move pointer</h3>
         <img src="Hold%20left%20click%20and%20move%20pointer.jpg" alt="Hold left click and move pointer" width="300"/>
     </div>
+    <div>
+        <h3>Scroll up</h3>
+        <img src="Scroll%20up.jpg" alt="Hold left click and move pointer" width="300"/>
+    </div>
+    <div>
+        <h3>Scroll down</h3>
+        <img src="Scroll%20down.jpg" alt="Hold left click and move pointer" width="300"/>
+    </div>
 </div>
