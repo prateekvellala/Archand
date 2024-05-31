@@ -5,7 +5,7 @@ import pyautogui
 import autopy
 import time
 
-class GestureRecognizer():
+class GestureRecognizer:
     def __init__(self, activeMode=False, maxHands=1, detectionConfidence=False, trackingConfidence=0.5):
         self.activeMode = activeMode
         self.maxHands = maxHands
