@@ -8,30 +8,30 @@ Control your mouse pointer entirely using hand gestures.
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
     <div>
         <h3>Move pointer</h3>
-        <img src="move%20pointer.jpg" alt="Move pointer" width="300"/>
+        <img src="Images/move%20pointer.jpg" alt="Move pointer" width="300"/>
     </div>
     <div>
         <h3>Single left click (Make sure the pointer stays still in the same spot for about 2 seconds before lifting your middle finger to perform a click)</h3>
-        <img src="single%20left%20click.jpg" alt="Single left click" width="300"/>
+        <img src="Images/single%20left%20click.jpg" alt="Single left click" width="300"/>
     </div>
     <div>
         <h3>Double left click</h3>
-        <img src="double%20left%20click.jpg" alt="Double left click" width="300"/>
+        <img src="Images/double%20left%20click.jpg" alt="Double left click" width="300"/>
     </div>
     <div>
         <h3>Single right click (Make sure the pointer stays still in the same spot for about 2 seconds before performing a click)</h3>
-        <img src="single%20right%20click.jpg" alt="Single right click" width="300"/>
+        <img src="Images/single%20right%20click.jpg" alt="Single right click" width="300"/>
     </div>
     <div>
         <h3>Hold left click and move pointer</h3>
-        <img src="Hold%20left%20click%20and%20move%20pointer.jpg" alt="Hold left click and move pointer" width="300"/>
+        <img src="Images/Hold%20left%20click%20and%20move%20pointer.jpg" alt="Hold left click and move pointer" width="300"/>
     </div>
     <div>
         <h3>Scroll up</h3>
-        <img src="Scroll%20up.jpg" alt="Scroll up" width="300"/>
+        <img src="Images/Scroll%20up.jpg" alt="Scroll up" width="300"/>
     </div>
     <div>
         <h3>Scroll down</h3>
-        <img src="Scroll%20down.jpg" alt="Scroll down" width="300"/>
+        <img src="Images/Scroll%20down.jpg" alt="Scroll down" width="300"/>
     </div>
 </div>
