@@ -4,6 +4,7 @@ import numpy as np
 import pyautogui
 import autopy
 import time
+import speech_recognition as sr
 
 class GestureRecognizer:
     def __init__(self, activeMode=False, maxHands=1, detectionConfidence=False, trackingConfidence=0.5):
@@ -68,7 +69,6 @@ class GestureRecognizer:
 
         return fingers
 
-
 def main():
     w = 640
     h = 480
@@ -82,6 +82,19 @@ def main():
     stab_rad = 10
     scroll_down_speed = -60
     scroll_up_speed = 60
+    interval = 0.01 # interval (in seconds) between keystrokes when typing.
+    timeout = 5 # duration (in seconds) that the speech recognizer waits for the speaker to start talking before it times out.
+    phrase_time_limit = 10 # duration (in seconds) for capturing speech after it has started, regardless of any pauses or breaks in speaking.
+    
+    r = sr.Recognizer()
+    def speech_to_text():
+        with sr.Microphone() as source:
+            r.adjust_for_ambient_noise(source)
+            try:
+                audio = r.listen(source, timeout=timeout, phrase_time_limit=phrase_time_limit)
+                return r.recognize_google(audio)
+            except (sr.UnknownValueError, sr.RequestError, sr.WaitTimeoutError):
+                return ''
 
     cap = cv2.VideoCapture(0)
     cap.set(3, w)
@@ -169,10 +182,17 @@ def main():
             if all(f == 1 for f in fingers):
                 pyautogui.scroll(scroll_up_speed)
 
+            # Speech to text
+            if fingers[2] == 1 and all(f == 0 for f in [fingers[0], fingers[1], fingers[3], fingers[4]]):
+                text = speech_to_text()
+                if text:
+                    pyautogui.write(text, interval=interval)
+
+
         curr_time = time.time()
         fps = 1 / (curr_time - prev_time)
         prev_time = curr_time
-        cv2.putText(img, str(int(fps)), (20, 50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3)
+        cv2.putText(img, str(int(fps)), (20, 50), cv2.FONT_HERSHEY_PLAIN, 3, (0, 0, 0), 3)
         cv2.imshow("Archand", img)
         
         if cv2.waitKey(1) & 0xFF == ord('q'):

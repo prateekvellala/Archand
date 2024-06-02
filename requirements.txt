@@ -3,3 +3,5 @@ mediapipe
 numpy
 pyautogui
 autopy
+SpeechRecognition
+PyAudio
