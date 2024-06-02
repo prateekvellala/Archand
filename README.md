@@ -34,4 +34,7 @@ Control your mouse pointer entirely using hand gestures.
         <h3>Scroll down</h3>
         <img src="Images/Scroll%20down.jpg" alt="Scroll down" width="300"/>
     </div>
+    <h3>Enables your microphone, and then whatever you say will be converted to text and typed where your cursor is blinking</h3>
+        <img src="Images/Speech%20to%20text.jpg" alt="Speech to text" width="300"/>
+    </div>
 </div>
