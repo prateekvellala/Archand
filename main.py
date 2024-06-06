@@ -87,8 +87,10 @@ def main():
     phrase_time_limit = 10 # duration (in seconds) for capturing speech after it has started, regardless of any pauses or breaks in speaking.
     
     r = sr.Recognizer()
+    m = sr.Microphone()
+
     def speech_to_text():
-        with sr.Microphone() as source:
+        with m as source:
             r.adjust_for_ambient_noise(source)
             try:
                 audio = r.listen(source, timeout=timeout, phrase_time_limit=phrase_time_limit)
